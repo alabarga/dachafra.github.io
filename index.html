@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="interactivity.js"></script>
+</head>
+<body>
+
+<section class="intro">
+    <div class="container">
+        <h1>David Chaves-Fraga PhD Timeline &darr;</h1>
+    </div>
+</section>
+
+<section class="timeline">
+    <ul>
+        <li>
+            <div>
+                <time>September 2016</time> My PhD at the Ontology Engineering Group starts!
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>November 2016</time> <a href="http://oasis.team">OASIS</a> and <a href="http://www.gof4r.eu/">GoF4R</a> European Project Kick-off meetings
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>January 2017</time> A vision on transport data sharing in the smart cities of Madrid and Ghent<a href="https://oasis.team/storage/app/media/O1.1%20White%20Paper%20-%20Transport.pdf"> white paper</a> and A vision on the discoverability of public services in the smart cities of Ghent and Madrid <a href="https://oasis.team/storage/app/media/O2.1%20White%20Paper%20-%20Services.pdf"> white paper by OASIS team</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>March 2017</time> 3 internship months starts at Universidad de Chile and Center of Semantic Web Research (<a href="http://ciws.cl/">CIWS</a>) working with Claudio Gutierrez
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>May 2017</time> TransportDCAT-AP <a href="https://oasis.team/storage/app/media/O1.2%20TransportDCAT-AP%20and%20Controlled%20Vocs.pdf">available</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>July 2017</time> Research visitor at Ghent University with Pieter Colpaert (<a href="https://twitter.com/pietercolpaert/status/889820548657754112">photo</a>). Also being part of the OASIS team during the second half of the <a href="http://2017.summerofcode.be/">Summer of Code 2017</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>July 2017</time>
+                <ul style="margin-top: 10px">
+                    - Presentation about TransportDCAT-AP and the relevance of the metadata in the Transport domain at <a href="https://www.meetup.com/Civic-Lab-Brussels/events/240602639/"> Civic Hack Night</a> in Brussels. <a href="https://www.slideshare.net/DavidChavesFraga/transportdcatap-and-phd-thesis-at-civic-lab-brussels">Slides</a>
+                </ul>
+                <ul style="margin-top: 10px">
+                    - Tripscore <a href="http://tripscore.eu/"> available</a> and <a href="https://twitter.com/OpenKnowledgeBE/status/890931927284408321"> presented at BeCentral </a>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>August 2017</time>
+                <ul style="margin-top: 10px">
+                    - Position paper "On the Role of the GRAPH Clause in the Performance of Federated SPARQL Queries" accepted at PROFILES2017 workshop, collocated with ISWC17. <a href="http://ceur-ws.org/Vol-1927/paper7.pdf">Link</a>
+                </ul>
+
+                <ul style="margin-top: 10px">
+                    - Demo paper "The tripscore Linked Data client: calculating specific summaries over large time series" accepted at DeSemWeb workshop, collocated with ISWC17. <a href="https://cef-oasis.github.io/tripscore/tripscore.html">Link</a>
+                </ul>
+
+                <ul style="margin-top: 10px">
+                    - Demo paper "Providing Reliable Access to Real-Time and Historic Public Transport Data Using Linked Connections" accepted at Demo&Poster session ISWC17. <a href="https://iswc2017.ai.wu.ac.at/wp-content/uploads/papers/PostersDemos/paper637.pdf">Link</a>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>September 2017</time> Presentation about the relevance of the Semantic Interoperability in the Transport Domain at the 9th IT Combined Meeting in Cologne. <a href="https://www.slideshare.net/DavidChavesFraga/semantic-interoperability-in-transport-domain">Slides</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <time>October 2017</time>
+                <ul style="margin-top: 10px">
+                    - Tripscore accepted at the 1 month dataton of the Madrid's council. <a href="https://www.slideshare.net/DavidChavesFraga/tripscore-datamad2017-madrid">Slides (spanish)</a>
+                </ul>
+                <ul style="margin-top: 10px">
+                    -  Presentation the demo paper "The tripscore Linked Data client: calculating specific summaries over large time series" at DeSemWeb workshop (ISWC17). <a href="https://www.slideshare.net/DavidChavesFraga/the-tripscore-linked-data-client-calculating-specific-summaries-over-large-time-series">Slides</a>
+                </ul>
+                <ul style="margin-top: 10px">
+                    -  Presentation the position paper "On the Role of the GRAPH Clause in the Performance of Federated SPARQL Queries" at PROFILES17 workshop (ISWC17). <a href="https://www.slideshare.net/DavidChavesFraga/on-the-role-of-the-graph-clause-in-the-performance-of-federated-sparql-queries">Slides</a>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
+</section>
+</body>
+</html>
+
+<script>
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+
+    var items = document.querySelectorAll(".timeline li");
+
+    // code for the isElementInViewport function
+
+    function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+            if (isElementInViewport(items[i])) {
+                items[i].classList.add("in-view");
+            }
+        }
+    }
+
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+</script>
+
+
