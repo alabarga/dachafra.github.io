@@ -2,7 +2,7 @@
 Write your PhD Time Line to you, to your twitter account or to inform your PhD adivsor.
 
 
-##Index.html
+## Index.html
 ``` html
 <div class="timeline-item">
     <div class="timeline-img"></div>
@@ -20,7 +20,7 @@ Write your PhD Time Line to you, to your twitter account or to inform your PhD a
  You also can include a \<div> tag with class="time-img-header" for showing a photo of the event between the title.
  
  
- ##Style.css
+ ## Style.css
  Change the colours, the distribution of the items, the margins, etc.
  Add the url for your images as
  ``` css
