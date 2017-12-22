@@ -29,5 +29,5 @@ Write your PhD Time Line to you, to your twitter account or to inform your PhD a
    background-size: cover;
  }
  ```
- where NUMBER is the number of the card where you want to appear the image (from 1 to numberofcards in index.html)
+ where NUMBER is the number of the card where you want to appear the image (from 1 to NumberOfCards in index.html)
 and URL is the url of your image.
